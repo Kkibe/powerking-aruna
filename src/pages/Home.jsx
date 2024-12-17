@@ -132,45 +132,6 @@ export default function Home() {
         })
         }
       </section>
-      {/*<section className='tables'>
-      {
-        allTips && <h2>WINNING HISTORY</h2>
-      }
-
-      <span className='btn-holder'>
-        <div className={`btn ${!status && "selected"}`} onClick={() => setStatus(false)}>Free</div>
-        <div className={`btn ${status && "selected"}`} onClick={() => setStatus(true)}>Premium</div>
-        <NavLink to={"/tips"} className='btn'>VIP TIPS&raquo;</NavLink>
-      </span>
-
-      {
-        allTips &&(
-        <table className='wrapper'>
-          <tr>
-            <th>DATE</th>
-            <th>HOME</th>
-            <th>AWAY</th>
-            <th>PICK</th>
-            <th>ODDS</th>
-            <th>RESULTS</th>
-          </tr>
-
-          {
-             allTips.filter((tip) => (tip.status === 'finished') && (tip.premium === status)).map(tip => {
-              return (<tr key={allTips.indexOf(tip)}>
-                        <td>{tip.date}</td>
-                        <td>{tip.home}</td>
-                        <td>{tip.away}</td>
-                        <td>{tip.pick}</td>
-                        <td>{tip.odd}</td>
-                        <td>{tip.won === 'won' ? <span className='won'><p>Won</p> <Verified className='icon'/></span>  : <span className='lost'><p>Lost</p> <Error className='icon'/></span>}</td>
-                      </tr>)
-            })
-          }
-  
-        </table>)
-      }
-      </section>*/}
       <section>
           <h1>Testimonials</h1>
           <h2>What clients say:</h2>

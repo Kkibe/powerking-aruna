@@ -255,7 +255,7 @@
               url(./assets/l3.jpg);
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
               url(./assets/l3.jpg);
-            background-size: auto;
+            background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: fixed;
@@ -269,12 +269,6 @@
                 font-size: .8em;
                 margin-top: 20px;
                 color: var(--light-blue);
-                /*&:nth-of-type(even){
-                    color:var(--odd);
-                }
-                &:nth-of-type(odd){
-                    color:var(--light-blue);
-                }*/
             }
         }
         
@@ -684,7 +678,7 @@ table{
             }
 
             &.won{
-                color: var(--light-blue);
+                color: var(--won);
             }
         }
     }
@@ -710,7 +704,7 @@ table{
             td{
                 span{
                     &.won{
-                        color: var(--blue);
+                        color: var(--won);
                     }
                 }
             }

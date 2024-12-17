@@ -70,15 +70,6 @@ export const updateUser = async (userId, isPremium, subscription, subDate) => {
   })
 }
 
-/*export const getUser = async (userId, setUserData) => {
-  const userDocRef = doc(db, "users", userId);
-  const userDoc = await getDoc(userDocRef);
-  if (userDoc.exists()) {
-    return setUserData(userDoc.data())
-  }
-  return;
-};*/
-
 export const getUser = async (userId, setUserData) => {
   const userDoc = await getDoc(doc(db, 'users', userId));
   if (userDoc.exists()) {

@@ -52,89 +52,13 @@ export const faqs = [
 ]
 
 export const socialLinks = {
-    telegramChannel: "https://t.me/powerkingtips",
+    telegramChannel: "https://t.me/+UMv6qx-FZa2Z5I6z",
     whatsappChannel: "https://whatsapp.com/channel/0029VajZ82OIN9iprM9OG638",
-    facebookPage: "https://www.facebook.com/profile.php?id=61569974256919&mibextid=ZbWKwL",
+    facebookPage: "https://www.facebook.com/profile.php?id=61564319706320",
     xPage: "https://www.x.com/@powerking_tips",
-    instagramPage: "",
-    affliateLink: "https://spin-to-win.powerkingtips.com/"
+    affliateLink: "https://spin-to-win.powerkingtips.com/",
+    promotion: "https://refpa7921972.top/L?tag=d_3966788m_1573c_&site=3966788&ad=1573"
 }
-
-/*export const testimonials = [
-    {
-        text: 'This site has been a game-changer for me! The VIP predictions are spot on, and I’ve seen my winnings improve dramatically.',
-        name: 'Kariuki',
-        country: 'Kenya'
-    },
-    {
-        text: 'I love how detailed the analysis is. It’s clear the team puts in a lot of effort to provide accurate predictions!',
-        name: 'Conor',
-        country: 'Ireland'
-    },
-    {
-        text: 'The free tips are great, but once I upgraded to VIP, I saw a significant boost in my betting success. Totally worth it!',
-        name: 'Theodore',
-        country: 'Australia'
-    },
-    {
-        text: 'I appreciate the range of payment options—it makes subscribing so much easier.',
-        name: 'Alejandro',
-        country: 'Colombia'
-    },
-    {
-        text: 'I’ve tried many prediction sites, but this one stands out with its consistency and accuracy. Highly recommended for serious gamblers.',
-        name: 'Dembe',
-        country: 'Uganda'
-    },
-    {
-        text: 'The daily updates and fresh predictions keep me ahead of the game. Plus, their analysis is top-notch!',
-        name: 'José',
-        country: 'Mexico'
-    },
-    {
-        text: "As a football fan and bettor, I find their predictions reliable and accurate. It's definitely improved my betting strategy.",
-        name: 'Melokuhle',
-        country: 'South Africa'
-    },
-    {
-        text: 'I’ve been using this site for months, and the VIP service is incredible. The predictions are consistently accurate, and I’ve made solid returns.',
-        name: 'Acheampong',
-        country: 'Ghana'
-    },
-    {
-        text: "I was hesitant at first, but after trying the VIP subscription, I’m hooked! Their insights are top-tier, and I’m winning more bets.",
-        name: 'Archie',
-        country: 'England'
-    },
-    {
-        text: "Great job with the detailed match previews and predictions. It’s helped me make smarter bets, and I’m very happy with the results.",
-        name: 'Carl',
-        country: 'Sweden'
-    },
-    {
-        text: "I appreciate the responsible betting advice provided. Not only are the predictions good, but the site also encourages smart betting habits.",
-        name: 'Bernardo',
-        country: 'Brazil'
-    }
-    ,
-    {
-        text: "I subscribed to the VIP predictions, and it was the best decision I’ve made. The tips are accurate, and the returns are great!",
-        name: 'Korhonen',
-        country: 'Finland'
-    }
-    ,
-    {
-        text: "The site’s user-friendly layout and reliable predictions make it my go-to platform for football betting. Highly recommend it!",
-        name: 'Adedayo',
-        country: 'Nigeria'
-    }
-    ,
-    {
-        text: "The results speak for themselves—ever since I started using this site, my betting accuracy has improved significantly. A+ service!",
-        name: 'Gabriel',
-        country: 'Luxembourg'
-    }
-]*/
 
 export const testimonials = [
     {

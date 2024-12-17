@@ -10,9 +10,9 @@ export default function Ticket() {
   const {currentUser} = useContext(AuthContext);
 
   const returnPeriod = () => {
-    if(price === 200){
+    if(price === 300){
       return 'Daily'
-    } else if (price === 600){
+    } else if (price === 1000){
       return 'Weekly'
     } else if (price === 3000){
       return 'Monthly'
@@ -52,14 +52,14 @@ export default function Ticket() {
       <AppHelmet title={"Pay"} location={'/pay'}/>
       <form>
       <fieldset>
-        <input name="prices" type="radio" value={200} id="daily" checked={price===200 ? true : false}   onChange={(e) => setPrice(200)}/>
+        <input name="prices" type="radio" value={300} id="daily" checked={price===300 ? true : false}   onChange={(e) => setPrice(300)}/>
         <label htmlFor="daily">Daily VIP</label>
-        <span className="price">KSH 200</span>
+        <span className="price">KSH 300</span>
       </fieldset>
       <fieldset>
-        <input name="prices" type="radio" value={600} id="weekly" checked={price===600 ? true : false}   onChange={(e) => setPrice(600)}/>
+        <input name="prices" type="radio" value={1000} id="weekly" checked={price===1000 ? true : false}   onChange={(e) => setPrice(1000)}/>
         <label htmlFor="weekly">7 Days VIP</label>
-        <span className="price">KSH 600</span>
+        <span className="price">KSH 1000</span>
       </fieldset>
       <fieldset>
         <input name="prices" type="radio" value={3000} id="monthly" checked={price===3000 ? true : false}   onChange={(e) => setPrice(3000)}/>

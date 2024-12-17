@@ -53,7 +53,7 @@ export default function SingleNews() {
             <base href={window.location.hostname}></base>
             <meta name="description" content={news.title}/>
             <meta name="keywords" content={`gaming, business, betting, tips, predictions ${news.category}`}/>
-            <meta name="author" content="POWERKING TIPS"/>
+            <meta name="author" content="Flash VIP Tips"/>
             <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
             <meta name='google-adsense-account' content='ca-pub-9576945242972545' />
           </Helmet>}

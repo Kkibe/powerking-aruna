@@ -103,10 +103,6 @@ const formatDateTimeForInput = (date, time) => {
                 <label htmlFor="status">Status: </label>
                 <input type="text" placeholder='Finish/Pending/Live' id='status' value={status} onChange={(e) => setStatus(e.target.value)} required/>
             </div>
-            {/*<div className="input-container">
-                <label htmlFor="time">Date/Time: </label>
-                <input type="datetime-local" id='time' value={time} onChange={(e) => setTime(e.target.value)} required/>
-            </div>*/}
             <div className="input-container">
                 <label htmlFor="results">Results</label>
                 <input type="text" placeholder='results' id='results' value={results} onChange={(e) => setResults(e.target.value)}/>

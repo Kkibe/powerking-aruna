@@ -18,14 +18,14 @@ export default function About() {
       </video>
       <div className='content'>
         <p>
-        Welcome to Powerking Tips, your go-to platform for accurate and reliable football betting predictions. Our mission is to provide football enthusiasts and bettors with expert tips, in-depth analysis, and strategic insights to help you make informed betting decisions.
+        Welcome to Flash VIP Tips, your go-to platform for accurate and reliable football betting predictions. Our mission is to provide football enthusiasts and bettors with expert tips, in-depth analysis, and strategic insights to help you make informed betting decisions.
         </p>
       </div>
     </div>
     <div className="quote">
       <div className='content'>
         <p>
-        At Powerking Tips, we cover a wide range of football leagues and tournaments, offering free and premium VIP predictions. Our team of analysts uses advanced data models, historical statistics, and real-time information to deliver predictions that give you an edge in the betting market. Whether you're looking for match outcomes, goals, or special betting markets, we’ve got you covered.
+        At Flash VIP Tips, we cover a wide range of football leagues and tournaments, offering free and premium VIP predictions. Our team of analysts uses advanced data models, historical statistics, and real-time information to deliver predictions that give you an edge in the betting market. Whether you're looking for match outcomes, goals, or special betting markets, we’ve got you covered.
         <br />
         <br />
         With our VIP subscription, you’ll gain access to exclusive, higher-accuracy tips designed for serious bettors. You can easily subscribe using MPesa, PayPal, or cryptocurrency, ensuring a smooth and convenient experience. We are committed to responsible betting and strive to provide consistent value through our expert predictions.

@@ -24,7 +24,7 @@ export default function EditUser({setUserData }) {
 
     useEffect(() => {
         if(currentUser !== null){
-            if(currentUser.email === 'kkibetkkoir@gmail.com' || currentUser.email === 'charleykibet254@gmail.com') {
+            if(currentUser.email === 'kkibetkkoir@gmail.com' || currentUser.email === 'charleykibet254@gmail.com' || user.email === 'aronkorir8@gmail.com') {
                 setIsAdmin(true)
             } else {
                 setIsAdmin(false)

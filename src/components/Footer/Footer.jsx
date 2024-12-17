@@ -4,6 +4,7 @@ import './Footer.scss';
 import { Link, NavLink } from 'react-router-dom';
 import Newsletter from '../Newsletter/Newsletter';
 import { socialLinks } from '../../data';
+import Promotion from '../../assets/promotion_1xbet.png';
 
 const Footer = ({user}) => {
     const [isAdmin, setIsAdmin] = useState(null);
@@ -17,7 +18,7 @@ const Footer = ({user}) => {
 
       useEffect(() => {
         if(user !== null){
-            if(user.email === 'kkibetkkoir@gmail.com' || user.email === 'charleykibet254@gmail.com') {
+            if(user.email === 'kkibetkkoir@gmail.com' || user.email === 'charleykibet254@gmail.com' || user.email === 'aronkorir8@gmail.com') {
                 setIsAdmin(true)
             } else {
                 setIsAdmin(false)
@@ -26,10 +27,11 @@ const Footer = ({user}) => {
       }, [user])
     return (
         <div className='footer theme'>
+            <Link to={socialLinks.promotion} title='200% bonus' target='_blank'><img src={Promotion} alt="1xbet" /></Link>
             <div className="wrapper">
                 <div className="sections">
                 <section>
-                    <h3>POWERKING TIPS</h3>
+                    <h3>Flash VIP Tips</h3>
                     <div className="container">
                         <NavLink to="/" title='healthgen'>HOME</NavLink>
                         <NavLink to="/tips" title='books'>GET TIPS</NavLink>
@@ -74,10 +76,6 @@ const Footer = ({user}) => {
                         <X />
                         <div className="tooltip">X(Twitter)</div>
                     </Link>
-                    {/*<Link to={socialLinks.instagramPage} title='instagram' target='_blank' className="instagram">
-                        <Instagram />
-                        <div className="tooltip">Instagram</div>
-                    </Link>*/}
                 </div >
                 
                     </div>
@@ -85,7 +83,7 @@ const Footer = ({user}) => {
             </div>
             <hr />
             <div className='footer-bottom theme'>
-                <p>&copy; POWERKING TIPS {new Date().getFullYear()}</p>
+                <p>&copy; Flash VIP TIPS {new Date().getFullYear()}</p>
                 <button className={`btn-top`} onClick={() => handleScroll()} aria-label="to-top"><ArrowUpward/></button>
             </div>
         

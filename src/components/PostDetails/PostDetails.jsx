@@ -28,7 +28,7 @@ export default function PostDetail({data, userData}) {
 
     useEffect(() => {
       if(currentUser !== null){
-          if(currentUser.email === 'kkibetkkoir@gmail.com' || currentUser.email === 'charleykibet254@gmail.com') {
+          if(currentUser.email === 'kkibetkkoir@gmail.com' || currentUser.email === 'charleykibet254@gmail.com' || currentUser.email === 'aronkorir8@gmail.com') {
               setIsAdmin(true)
           } else {
               setIsAdmin(false)
@@ -44,7 +44,7 @@ export default function PostDetail({data, userData}) {
     <div className={`post-detail ${x.matches && "active"}`} >
         <Close className='close' onClick={handleClick}/>
         <div className="detail-header">
-            <img src={data.premium ? Profile : Logo} alt="powerking_vip" />
+            <img src={data.premium ? Profile : Logo} alt="flash_vip" />
             <h3>{data.date} - {data.time}</h3>
         </div>
         <h4>
@@ -56,11 +56,11 @@ export default function PostDetail({data, userData}) {
         <hr className="divider"/>
         <h4><span style={{
                            color: (data.premium && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) && 'transparent',
-                           textShadow: (data.premium && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) && '0 0 5px rgba(0,0,0,.1)'}}>{data.home}</span> <span>{data.results ? data.results.split('-')[0] : "?" }</span></h4>
+                           textShadow: (data.premium && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) && '0 0 5px rgba(0,0,0,.1)'}}>{!((data.premium) && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) ?  data.home : "open" }</span> <span>{data.results ? data.results.split('-')[0] : "?" }</span></h4>
         <hr className="divider"/>
         <h4><span style={{
                            color: (data.premium && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) && 'transparent',
-                           textShadow: (data.premium && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) && '0 0 5px rgba(0,0,0,.1)'}}>{data.away}</span> <span>{data.results ? data.results.split('-')[1] : "?" }</span></h4>
+                           textShadow: (data.premium && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) && '0 0 5px rgba(0,0,0,.1)'}}>{!((data.premium) && (data.status !== 'finished') && (!isPremium && data.date === formatDate())) ?  data.away : "open" }</span> <span>{data.results ? data.results.split('-')[1] : "?" }</span></h4>
         <hr className="divider"/>
         <div className="detail-btn">
           <button className="btn" disabled aria-label="premium">💡{data.pick}</button>

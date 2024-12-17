@@ -23,7 +23,7 @@ const Navbar = () => {
     return (
         <header>
             <NavLink to="/" className='logo'>
-                    <img src={Logo} alt='powerking_logo'/>
+                    <img src={Logo} alt='flash_vip_logo'/>
             </NavLink> 
             <nav className='closed'>
                 <NavLink to="/" title='home' onClick={handleToggleNav}>Home</NavLink>

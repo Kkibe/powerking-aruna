@@ -1,4 +1,4 @@
-const CACHE_NAME = 'powerkingtips-cache';
+const CACHE_NAME = 'flashviptips-cache';
 const urlsToCache = [
     '/',
     '/index.html',
