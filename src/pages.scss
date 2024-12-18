@@ -252,9 +252,9 @@
                 from(rgba(0, 0, 0, 0.4)),
                 to(rgba(0, 0, 0, 0.4))
               ),
-              url(./assets/l3.jpg);
+              url(./assets/l4.jpg);
             background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-              url(./assets/l3.jpg);
+              url(./assets/l4.jpg);
             background-size:cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -554,10 +554,10 @@
             from(rgba(0, 0, 0, 0.4)),
             to(rgba(0, 0, 0, 0.4))
           ),
-          url(./assets/l4.jpg);
+          url(./assets/l3.jpg);
         background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
-          url(./assets/l4.jpg);
-        background-size: auto;
+          url(./assets/l3.jpg);
+        background-size: cover;
         background-position: center;
         background-repeat: no-repeat;
         background-attachment: fixed;

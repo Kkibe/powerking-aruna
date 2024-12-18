@@ -27,7 +27,7 @@ export default function Pricing() {
             id: 2,
             title: "Gold",
             slogan: "30% cashback on your first purchase",
-            price: 1000,
+            price: 800,
             duration: "/Week",
             features: [
                 "Get the scoop on this week’s matches",
