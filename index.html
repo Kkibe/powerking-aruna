@@ -3,17 +3,37 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/logo32.png" />
     <link rel="apple-touch-icon" href="/logo192.png" />
-    <link rel="manifest" href="/manifest.json" crossorigin="*"/>  
+    <link rel="manifest" href="/manifest.json" crossorigin="anonymous"/>  
     <link rel="shortcut icon" type="image/x-icon" href="/logo512.png" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#00ae58">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+    <meta name="theme-color" content="#00BFFF">
     <meta name="description" content="Get all the latest ✓Fixed VIP Tips ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions, including the Premier League, Championship and across the world."/>
-    <meta name="keywords" content="Football Predictions, Betting Odds, Live Scores, Football Predictions, Live Sports, Football Results, Football Fixtures, Football Today, Premier League, Championship, Super Sports, Laliga, Bundesliga, Serie A">
+    <meta name="keywords" content="Football Predictions, Betting Odds, Live Scores, Live Sports, Football Results, Football Fixtures, Football Today, Premier League, Championship, Super Sports, Laliga, Bundesliga, Serie A">
     <meta name="author" content="FLASH VIP TIPS">
     <link rel="canonical" href="/" />
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="FLASH VIP TIPS" />
+    <meta property="og:description" content="Get all the latest ✓Fixed VIP Tips ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions." />
+    <meta property="og:image" content="/logo512.png" />
+    <meta property="og:url" content="https://flashviptips.com" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="FLASH VIP TIPS" />
+    <meta name="twitter:description" content="Get all the latest ✓Fixed VIP Tips ✓Football Predictions, ✓Latest Football Betting Odds and livescores, results & fixtures for all leagues and competitions." />
+    <meta name="twitter:image" content="/logo512.png" />
+
+    <!-- iOS -->
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="FLASH VIP TIPS" />
+
+    <meta name="robots" content="index, follow" />
     <title>FLASH VIP TIPS</title>
-    <script src="https://www.paypalobjects.com/donate/sdk/donate-sdk.js" charset="UTF-8"></script>
   </head>
   <body>
     <div id="root"></div>
@@ -26,6 +46,12 @@
                   console.error('Service Worker registration failed:', error);
              });
        }
+
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#000000');
+      } else {
+        document.querySelector('meta[name="theme-color"]').setAttribute('content', '#00BFFF');
+      }
    </script>
    <script type="text/jsx" src='https://code.jquery.com/jquery-3.2.1.min.js' ></script>
    <script type="text/jsx" src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
