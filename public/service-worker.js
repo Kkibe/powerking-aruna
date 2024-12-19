@@ -6,6 +6,7 @@ const urlsToCache = [
     '/logo512.png'
 ];
 
+
 // Install event: Cache specified resources
 self.addEventListener('install', (event) => {
     event.waitUntil(
@@ -60,7 +61,40 @@ self.addEventListener('fetch', (event) => {
             });
         }).catch(() => {
             // Optional: Provide offline fallback for failed requests
-            return caches.match('/fallback.html');
+            return //caches.match('/fallback.html');
         })
+    );
+});
+
+
+// Notification click handler (optional)
+self.addEventListener('notificationclick', (event) => {
+    event.notification.close(); // Close the notification
+    event.waitUntil(
+        self.clients.matchAll({ type: 'window' }).then((clientList) => {
+            // Check if the app is already open in a window
+            for (let client of clientList) {
+                if (client.url === '/' && 'focus' in client) {
+                    return client.focus();
+                }
+            }
+            // If not open, open a new window
+            if (self.clients.openWindow) {
+                return self.clients.openWindow('/');
+            }
+        })
+    );
+});
+
+// Push event handler (optional for push notifications)
+self.addEventListener('push', (event) => {
+    const data = event.data ? event.data.text() : 'Default notification content';
+    const options = {
+        body: data,
+        icon: '/logo512.png',
+        badge: '/logo128.png'
+    };
+    event.waitUntil(
+        self.registration.showNotification('Flash VIP TIPS', options)
     );
 });

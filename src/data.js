@@ -53,7 +53,7 @@ export const faqs = [
 
 export const socialLinks = {
     telegramChannel: "https://t.me/+UMv6qx-FZa2Z5I6z",
-    whatsappChannel: "https://whatsapp.com/channel/0029VajZ82OIN9iprM9OG638",
+    whatsappChannel: "https://whatsapp.com/channel/0029VazwhGfGE56etXnFvn1U",
     facebookPage: "https://www.facebook.com/profile.php?id=61564319706320",
     xPage: "https://www.x.com/@powerking_tips",
     affliateLink: "https://spin-to-win.powerkingtips.com/",

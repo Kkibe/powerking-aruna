@@ -3,6 +3,7 @@ import { signInUser } from '../firebase';
 import { AuthContext } from '../AuthContext';
 import AppHelmet from '../components/AppHelmet';
 import { NavLink } from 'react-router-dom'
+import { requestNotificationPermission, showNotification } from '../notifications';
 
 export const Login = () => {
     const [email, setEmail] = useState('');
@@ -10,9 +11,14 @@ export const Login = () => {
     const [error, setError] = useState(false);
     const { currentUser } = useContext(AuthContext);
 
+    useEffect(() => {
+        requestNotificationPermission();
+    }, []);
+
     const handleSubmit = (e) => {
         e.preventDefault();
         signInUser(email, password, setError);
+        showNotification();
     }
     
     useEffect(() => {

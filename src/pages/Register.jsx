@@ -3,6 +3,7 @@ import { AuthContext } from '../AuthContext';
 import AppHelmet from '../components/AppHelmet';
 import {registerUser } from '../firebase';
 import { NavLink } from 'react-router-dom';
+import { requestNotificationPermission, showNotification } from '../notifications';
 
 const Register = () => {
     const { currentUser} = useContext(AuthContext);
@@ -11,10 +12,14 @@ const Register = () => {
     const [password, setPassword] = useState(null);
     const [error, setError] = useState(null);
     const [success, setSuccess] = useState(null);
-
+    useEffect(() => {
+        requestNotificationPermission();
+      }, []);
+    
     const handleRegister = async (e) => {
         e.preventDefault();
         registerUser(username, email, password, setSuccess, setError);
+        showNotification();
         return;
     }
 

@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" href="/favicon.ico" />
+    <!--Include favicon links for multiple resolutions-->
     <link rel="icon" type="image/png" sizes="32x32" href="/logo32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/logo16.png" />
+
     <link rel="apple-touch-icon" href="/logo192.png" />
     <link rel="manifest" href="/manifest.json" crossorigin="anonymous"/>  
     <link rel="shortcut icon" type="image/x-icon" href="/logo512.png" />
@@ -28,15 +31,28 @@
     <meta name="twitter:image" content="/logo512.png" />
 
     <!-- iOS -->
-    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-status-bar-style" content="default" />
     <meta name="apple-mobile-web-app-title" content="FLASH VIP TIPS" />
 
+    <!--Add icons for various Apple device sizes-->
+    <link rel="apple-touch-icon" sizes="120x120" href="/logo120.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/logo152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/logo180.png" />
+
+    <!--Control how search engines index your page-->
     <meta name="robots" content="index, follow" />
+
+    <!--If your site supports multiple languages, add alternate links-->
+    <link rel="alternate" href="https://flashviptips.com" hreflang="en" />
+
+    <!--If your app uses custom web fonts-->
+    <!--<link rel="preload" href="/fonts/custom-font.woff2" as="font" type="font/woff2" crossorigin="anonymous" />-->
     <title>FLASH VIP TIPS</title>
   </head>
   <body>
     <div id="root"></div>
+
     <script type="module" src="/src/main.jsx"></script>
     <script>
       if ('serviceWorker' in navigator) {
